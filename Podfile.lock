@@ -1,0 +1,51 @@
+PODS:
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking/NSURLConnection (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - HappyDNS (0.2.3)
+  - KIAdditions/NSData (0.1)
+  - KIAdditions/NSString (0.1):
+    - KIAdditions/NSData
+  - Qiniu (7.0.13):
+    - AFNetworking (~> 2.0)
+    - HappyDNS (~> 0.2)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.5.4)
+  - KIAdditions/NSString (from `https://github.com/smartwalle/KIAdditions.git`)
+  - Qiniu (~> 7.0.0)
+
+EXTERNAL SOURCES:
+  KIAdditions:
+    :git: https://github.com/smartwalle/KIAdditions.git
+
+CHECKOUT OPTIONS:
+  KIAdditions:
+    :commit: 2cd50f09c86146f798c4a9de4aab1035b99b56a4
+    :git: https://github.com/smartwalle/KIAdditions.git
+
+SPEC CHECKSUMS:
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  HappyDNS: 6d85942e64c28b4fa61f8c76580398f52d6d1d11
+  KIAdditions: e0f62ab0ccb8816f3d2af22d434969bd2d98a164
+  Qiniu: d899770cc7b9a7abb3bff9fd993adc93c9475d45
+
+COCOAPODS: 0.37.1

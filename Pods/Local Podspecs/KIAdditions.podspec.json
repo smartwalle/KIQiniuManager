@@ -1,0 +1,177 @@
+{
+  "name": "KIAdditions",
+  "version": "0.1",
+  "summary": "KIAdditions",
+  "description": "                   KIAdditions.\n",
+  "homepage": "https://github.com/smartwalle/KIAdditions",
+  "license": "MIT",
+  "authors": {
+    "SmartWalle": "smartwalle@gmail.com"
+  },
+  "platforms": {
+    "ios": null
+  },
+  "source": {
+    "git": "https://github.com/smartwalle/KIAdditions.git",
+    "branch": "master",
+    "submodules": true
+  },
+  "source_files": "KIAdditions/KIAdditions/*.{h,m}",
+  "exclude_files": "Classes/Exclude",
+  "requires_arc": true,
+  "subspecs": [
+    {
+      "name": "NSBundle",
+      "source_files": "KIAdditions/KIAdditions/NSBundle/*.{h,m}"
+    },
+    {
+      "name": "NSData",
+      "source_files": "KIAdditions/KIAdditions/NSData/NSData+KIAdditions.{h,m}"
+    },
+    {
+      "name": "NSDate",
+      "source_files": "KIAdditions/KIAdditions/NSDate/NSDate+KIAdditions.{h,m}"
+    },
+    {
+      "name": "NSDictionary",
+      "source_files": "KIAdditions/KIAdditions/NSDictionary/NSDictionary+KIAdditions.{h,m}"
+    },
+    {
+      "name": "NSFileManager",
+      "source_files": "KIAdditions/KIAdditions/NSFileManager/NSFileManager+KIAdditions.{h,m}",
+      "dependencies": {
+        "KIAdditions/NSBundle": [
+
+        ]
+      }
+    },
+    {
+      "name": "NSLayoutConstraint",
+      "source_files": "KIAdditions/KIAdditions/NSLayoutConstraint/NSLayoutConstraint+KIAdditions.{h,m}",
+      "frameworks": "UIKit"
+    },
+    {
+      "name": "NSMutableDictionary",
+      "source_files": "KIAdditions/KIAdditions/NSMutableDictionary/NSMutableDictionary+KIAdditions.{h,m}"
+    },
+    {
+      "name": "NSObject",
+      "source_files": "KIAdditions/KIAdditions/NSObject/NSObject+KIAdditions.{h,m}",
+      "frameworks": "UIKit",
+      "dependencies": {
+        "KIAdditions/NSData": [
+
+        ]
+      }
+    },
+    {
+      "name": "NSString",
+      "source_files": "KIAdditions/KIAdditions/NSString/NSString+KIAdditions.{h,m}",
+      "dependencies": {
+        "KIAdditions/NSData": [
+
+        ]
+      }
+    },
+    {
+      "name": "NSUserDefaults",
+      "source_files": "KIAdditions/KIAdditions/NSUserDefaults/NSUserDefaults+KIAdditions.{h,m}"
+    },
+    {
+      "name": "UIButton",
+      "source_files": "KIAdditions/KIAdditions/UIButton/UIButton+KIAdditions.{h,m}",
+      "frameworks": "UIKit"
+    },
+    {
+      "name": "UIColor",
+      "source_files": "KIAdditions/KIAdditions/UIColor/UIColor+KIAdditions.{h,m}",
+      "frameworks": "UIKit"
+    },
+    {
+      "name": "UIDevice",
+      "source_files": "KIAdditions/KIAdditions/UIDevice/UIDevice+KIAdditions.{h,m}",
+      "frameworks": [
+        "UIKit",
+        "AudioToolbox",
+        "SystemConfiguration"
+      ]
+    },
+    {
+      "name": "UIImage",
+      "source_files": "KIAdditions/KIAdditions/UIImage/UIImage+KIAdditions.{h,m}",
+      "frameworks": [
+        "UIKit",
+        "Accelerate",
+        "QuartzCore"
+      ]
+    },
+    {
+      "name": "UIView",
+      "source_files": "KIAdditions/KIAdditions/UIView/UIView+KIAdditions.{h,m}",
+      "frameworks": "QuartzCore"
+    },
+    {
+      "name": "UIImageView",
+      "source_files": "KIAdditions/KIAdditions/UIImageView/UIImageView+KIAdditions.{h,m}",
+      "frameworks": "UIKit",
+      "dependencies": {
+        "KIAdditions/UIView": [
+
+        ],
+        "KIAdditions/UIImage": [
+
+        ]
+      }
+    },
+    {
+      "name": "UINavigationBar",
+      "source_files": "KIAdditions/KIAdditions/UINavigationBar/UINavigationBar+KIAdditions.{h,m}",
+      "frameworks": "UIKit",
+      "dependencies": {
+        "KIAdditions/UIDevice": [
+
+        ]
+      }
+    },
+    {
+      "name": "UINavigationController",
+      "source_files": "KIAdditions/KIAdditions/UINavigationController/UINavigationController+KIAdditions.{h,m}",
+      "frameworks": "UIKit"
+    },
+    {
+      "name": "UIScreen",
+      "source_files": "KIAdditions/KIAdditions/UIScreen/UIScreen+KIAdditions.{h,m}",
+      "frameworks": "UIKit"
+    },
+    {
+      "name": "UITableView",
+      "source_files": "KIAdditions/KIAdditions/UITableView+KIAdditions.{h,m}",
+      "frameworks": "UIKit"
+    },
+    {
+      "name": "UITableViewCell",
+      "source_files": "KIAdditions/KIAdditions/UITableViewCell+KIAdditions.{h,m}",
+      "frameworks": "UIKit"
+    },
+    {
+      "name": "UITableViewController",
+      "source_files": "KIAdditions/KIAdditions/UITableViewController+KIAdditions.{h,m}",
+      "frameworks": "UIKit",
+      "dependencies": {
+        "KIAdditions/UITableView": [
+
+        ]
+      }
+    },
+    {
+      "name": "UITextField",
+      "source_files": "KIAdditions/KIAdditions/UITextField+KIAdditions.{h,m}",
+      "frameworks": "UIKit"
+    },
+    {
+      "name": "UIViewController",
+      "source_files": "KIAdditions/KIAdditions/UIViewController+KIAdditions.{h,m}",
+      "frameworks": "UIKit"
+    }
+  ]
+}
