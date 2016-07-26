@@ -26,14 +26,14 @@ PODS:
     - HappyDNS (~> 0.2)
 
 DEPENDENCIES:
-  - AFNetworking (~> 2.5.4)
-  - Qiniu (~> 7.0)
+  - AFNetworking
+  - Qiniu
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   HappyDNS: 6d85942e64c28b4fa61f8c76580398f52d6d1d11
   Qiniu: d899770cc7b9a7abb3bff9fd993adc93c9475d45
 
-PODFILE CHECKSUM: a3c0df06e74d671b82205a60713939b50952df95
+PODFILE CHECKSUM: 176ad76edf65b4c6990ff418feab0b36e0ac0a48
 
 COCOAPODS: 1.0.0
