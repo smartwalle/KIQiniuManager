@@ -1,1 +1,0 @@
-../../../KIAdditions/KIAdditions/KIAdditions/NSString/NSString+KIAdditions.h

@@ -4,27 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-AFNetworking.xcscheme</key>
+		<key>AFNetworking.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-HappyDNS.xcscheme</key>
+		<key>HappyDNS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-KIAdditions.xcscheme</key>
+		<key>Pods-KIQiniuManager.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Qiniu.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods.xcscheme</key>
+		<key>Qiniu.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,27 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>11F21DB3C5F210D6B811A9AB</key>
+		<key>2602F3D0DAC534568B6AD7EEA0DD1959</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A6C40986821F3B5CA90B4906</key>
+		<key>6627E2CE58504A680DE862D5526B302C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C0A63AD6D5BBDA8B569CE6D0</key>
+		<key>A3ADF755B6ADF443440DA0A615E3A376</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C9FB00D00B31945A0824F377</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DA27F04722F5CE028CB38A7C</key>
+		<key>F88C31CBB588C60620D56E75074F67F7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

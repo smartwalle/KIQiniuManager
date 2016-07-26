@@ -15,7 +15,7 @@
 		1827D4F61BE88444009F3B9B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1827D4F41BE88444009F3B9B /* LaunchScreen.xib */; };
 		1827D5021BE88444009F3B9B /* KIQiniuManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1827D5011BE88444009F3B9B /* KIQiniuManagerTests.m */; };
 		1827D50E1BE88458009F3B9B /* KIQiniuManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1827D50D1BE88458009F3B9B /* KIQiniuManager.m */; };
-		7D834089BB8F0CCD532885F4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C45FBD78512FBBF40C3F4A /* libPods.a */; };
+		F527537FE4F09A350961FE15 /* libPods-KIQiniuManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E2A29479F4C8C633A189E8 /* libPods-KIQiniuManager.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,9 +44,9 @@
 		1827D5011BE88444009F3B9B /* KIQiniuManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIQiniuManagerTests.m; sourceTree = "<group>"; };
 		1827D50C1BE88458009F3B9B /* KIQiniuManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIQiniuManager.h; sourceTree = "<group>"; };
 		1827D50D1BE88458009F3B9B /* KIQiniuManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIQiniuManager.m; sourceTree = "<group>"; };
-		C2B2E5C6FF121F89F46AF8E0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		C9C45FBD78512FBBF40C3F4A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7687BDCBE00D9BB9DF2C1DD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		43E2A29479F4C8C633A189E8 /* libPods-KIQiniuManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KIQiniuManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC3044C4B4F15984CDD2F2DF /* Pods-KIQiniuManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIQiniuManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-KIQiniuManager/Pods-KIQiniuManager.release.xcconfig"; sourceTree = "<group>"; };
+		F30A9C195D210ACB4CFA0AFD /* Pods-KIQiniuManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIQiniuManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KIQiniuManager/Pods-KIQiniuManager.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D834089BB8F0CCD532885F4 /* libPods.a in Frameworks */,
+				F527537FE4F09A350961FE15 /* libPods-KIQiniuManager.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,14 +68,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18180B90B32963E45C30AE56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43E2A29479F4C8C633A189E8 /* libPods-KIQiniuManager.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1827D4D91BE88444009F3B9B = {
 			isa = PBXGroup;
 			children = (
 				1827D4E41BE88444009F3B9B /* KIQiniuManager */,
 				1827D4FE1BE88444009F3B9B /* KIQiniuManagerTests */,
 				1827D4E31BE88444009F3B9B /* Products */,
-				6E77D4E69DC24D20C40055D4 /* Pods */,
-				A2055A750B20E03C72B2A49D /* Frameworks */,
+				F9BB256226C44A5A52E17600 /* Pods */,
+				18180B90B32963E45C30AE56 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,21 +147,13 @@
 			path = KIQiniuManager;
 			sourceTree = "<group>";
 		};
-		6E77D4E69DC24D20C40055D4 /* Pods */ = {
+		F9BB256226C44A5A52E17600 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C2B2E5C6FF121F89F46AF8E0 /* Pods.debug.xcconfig */,
-				E7687BDCBE00D9BB9DF2C1DD /* Pods.release.xcconfig */,
+				F30A9C195D210ACB4CFA0AFD /* Pods-KIQiniuManager.debug.xcconfig */,
+				BC3044C4B4F15984CDD2F2DF /* Pods-KIQiniuManager.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		A2055A750B20E03C72B2A49D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C9C45FBD78512FBBF40C3F4A /* libPods.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,11 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1827D5051BE88444009F3B9B /* Build configuration list for PBXNativeTarget "KIQiniuManager" */;
 			buildPhases = (
-				DF6D9F28C4B00A6A7DC58233 /* Check Pods Manifest.lock */,
+				C307C4C2718A47C7BD95BB8C /* 📦 Check Pods Manifest.lock */,
 				1827D4DE1BE88444009F3B9B /* Sources */,
 				1827D4DF1BE88444009F3B9B /* Frameworks */,
 				1827D4E01BE88444009F3B9B /* Resources */,
-				069A58520DDD3C9098AD2737 /* Copy Pods Resources */,
+				DF0C13C0C87C6D9185AA2283 /* 📦 Embed Pods Frameworks */,
+				831E1408C2490E552C60B8BA /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,34 +255,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		069A58520DDD3C9098AD2737 /* Copy Pods Resources */ = {
+		831E1408C2490E552C60B8BA /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KIQiniuManager/Pods-KIQiniuManager-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DF6D9F28C4B00A6A7DC58233 /* Check Pods Manifest.lock */ = {
+		C307C4C2718A47C7BD95BB8C /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DF0C13C0C87C6D9185AA2283 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KIQiniuManager/Pods-KIQiniuManager-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -416,7 +432,7 @@
 		};
 		1827D5061BE88444009F3B9B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2B2E5C6FF121F89F46AF8E0 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = F30A9C195D210ACB4CFA0AFD /* Pods-KIQiniuManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
@@ -428,7 +444,7 @@
 		};
 		1827D5071BE88444009F3B9B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7687BDCBE00D9BB9DF2C1DD /* Pods.release.xcconfig */;
+			baseConfigurationReference = BC3044C4B4F15984CDD2F2DF /* Pods-KIQiniuManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
