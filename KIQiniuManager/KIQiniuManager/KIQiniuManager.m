@@ -42,13 +42,8 @@ static KIQiniuManager *KI_QINIU_MANAGER;
 
 @implementation KIQiniuManager
 
-- (id)init {
-    if (KI_QINIU_MANAGER == nil) {
-        if (self = [super init]) {
-            KI_QINIU_MANAGER = self;
-        }
-    }
-    return KI_QINIU_MANAGER;
++ (id)allocWithZone:(NSZone *)zone {
+    return [self sharedInstance];
 }
 
 - (NSString *)accessKey {
@@ -188,7 +183,7 @@ static KIQiniuManager *KI_QINIU_MANAGER;
 + (KIQiniuManager *)sharedInstance {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        KI_QINIU_MANAGER = [[KIQiniuManager alloc] init];
+        KI_QINIU_MANAGER = [[super allocWithZone:nil] init];
     });
     return KI_QINIU_MANAGER;
 }
