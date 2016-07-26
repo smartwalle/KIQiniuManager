@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "KIQiniuManager"
-  s.version      = "0.1"
+  s.version      = "0.0.1"
   s.summary      = "KIQiniuManager"
 
   s.description  = <<-DESC
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author             = { "SmartWalle" => "smartwalle@gmail.com" }
   s.platform     = :ios, "6.0"
-  s.source       = { :git => "https://github.com/smartwalle/KIQiniuManager.git", :branch => "master" }
+  s.source       = { :git => "https://github.com/smartwalle/KIQiniuManager.git", :tag => "#{s.version}" }
 
   s.source_files  = "KIQiniuManager/KIQiniuManager/*.{h,m}"
   s.exclude_files = "Classes/Exclude"

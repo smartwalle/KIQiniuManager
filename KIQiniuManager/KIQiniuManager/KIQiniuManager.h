@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "QiniuSDK.h"
-//pod "KIAdditions/NSString", :git=> "https://github.com/smartwalle/KIAdditions.git"
-#import "NSString+KIAdditions.h"
 
 #define KIQiniuFileURLString(fileKey) [KIQiniuManager fileURLString:fileKey]
 

@@ -7,6 +7,7 @@
 //
 
 #import "KIQiniuManager.h"
+#include <CommonCrypto/CommonHMAC.h>
 
 #define KIDeadline(seconds) [[NSDate dateWithTimeInterval:(seconds) sinceDate:[NSDate date]] timeIntervalSince1970]
 
@@ -105,7 +106,7 @@ static KIQiniuManager *KI_QINIU_MANAGER;
     NSString *policyStr = [[NSString alloc] initWithData:policyData encoding:NSUTF8StringEncoding];
     
     NSString *encodedPolicy = [QNUrlSafeBase64 encodeString:policyStr];
-    NSData *sign = [encodedPolicy hmacsha1WithSecret:secretKey];
+    NSData *sign = [self hmacsha1WithSecret:secretKey value:encodedPolicy];
     NSString *encodeSign = [QNUrlSafeBase64 encodeData:sign];
     
     NSString *token = [NSString stringWithFormat:@"%@:%@:%@", accessKey, encodeSign, encodedPolicy];
@@ -149,7 +150,7 @@ static KIQiniuManager *KI_QINIU_MANAGER;
     
     if (privateScope) {
         urlString = [NSMutableString stringWithFormat:@"%@/%@%@e=%ld", domain, filePath, sep, (long)deadline];
-        NSData *sign = [urlString hmacsha1WithSecret:secretKey];
+        NSData *sign = [self hmacsha1WithSecret:secretKey value:urlString];
         NSString *encodeSign = [QNUrlSafeBase64 encodeData:sign];
         NSString *token = [NSString stringWithFormat:@"%@:%@", accessKey, encodeSign];
         
@@ -168,6 +169,20 @@ static KIQiniuManager *KI_QINIU_MANAGER;
                      secretKey:[self secretKey]
                   privateScope:[self privateScope]
                       deadline:deadline];
+}
+
+- (NSData *)hmacsha1WithSecret:(NSString *)secret value:(NSString *)value {
+    
+    const char *cKey  = [secret cStringUsingEncoding:NSASCIIStringEncoding];
+    const char *cData = [value cStringUsingEncoding:NSASCIIStringEncoding];
+    
+    unsigned char cHMAC[CC_SHA1_DIGEST_LENGTH];
+    
+    CCHmac(kCCHmacAlgSHA1, cKey, strlen(cKey), cData, strlen(cData), cHMAC);
+    
+    NSData *HMAC = [[NSData alloc] initWithBytes:cHMAC length:sizeof(cHMAC)];
+    
+    return HMAC;
 }
 
 + (KIQiniuManager *)sharedInstance {
