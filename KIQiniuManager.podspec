@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 
   s.homepage     = "https://github.com/smartwalle/KIQiniuManager"
   s.license      = "MIT"
-  s.author             = { "SmartWalle" => "smartwalle@gmail.com" }
+  s.author       = { "SmartWalle" => "smartwalle@gmail.com" }
   s.platform     = :ios, "6.0"
   s.source       = { :git => "https://github.com/smartwalle/KIQiniuManager.git", :tag => "#{s.version}" }
 
@@ -19,6 +19,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "AFNetworking"
-  s.dependency "Qiniu"
+  s.dependency "AFNetworking", '~> 2.5.4'
+  s.dependency "Qiniu", "~> 7.0"
 end
